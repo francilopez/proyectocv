@@ -19,19 +19,23 @@ color: white;
 #fotocv{
     height: 400px;
     width: 350px;
-    flex-shrink: 0;
 }
 .foto1{
     display: flex;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
     height: 100%;
+    margin-right: 40px;
+    margin-top: 100px;
 }
 .Encabezados{
   text-align: left;
   color: white;
-  position: relative;
-  left: 25%;
+  flex-shrink: 0;
+  font-size: 20px;
+  font-weight: 400;
+  margin-left: 100px;
+  margin-top: 100px;
 }
 .colortxtboton{
     color: white;
@@ -41,8 +45,7 @@ color: white;
 }
 .contenedortexto{
     color: white;
-    text-align: right;
-
+    text-align: left;
 }
 .body{
     font-family: 'Montserrat', sans-serif;
