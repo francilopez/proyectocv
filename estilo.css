@@ -1,3 +1,4 @@
+
 .boton{
     width: 30%;
     height: 60px;
@@ -8,6 +9,7 @@
 .menu{
     background-color: rgba(0, 0, 0, 0.308);
     display: flex;
+    width: 100%;
 }
 .txtfoto{
     display: flex;
@@ -19,6 +21,7 @@
     width: 350px;
     border-radius: 200px;
     margin-left: 40px;
+    margin-top: 100px;
     display: flex;
 }
 #encabezado{
@@ -39,10 +42,12 @@
     text-align: left;
     line-height: 3;
     margin-left: 50px;
+    margin-top: 100px;
 }
 .body{
     font-family: 'Montserrat';
     background-color: #010f1b ;
+    color: white;
 }
 #parrafop{
     text-align: right;
@@ -52,6 +57,7 @@
     text-align: left;
     line-height: 1.5;
     margin-left: 50px;
+    margin-top: 150px;
 }
 .colorvinc{
     color: orangered;
@@ -62,4 +68,74 @@
     font-size: 20px;
     margin-top: 100px;
     margin-right: 200px;
+}
+
+.menu1{
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    border: 2px solid black;
+    padding: 12px 0;
+    margin: 20px;
+    background-color: #ddd;
+    justify-content: center;
+}
+.comp{
+    text-align: left;
+    width: 350px;
+    height: 200px;
+    line-height: 1.5;
+    margin-left: 150px;
+    margin-top: 100px;
+}
+.espacio{
+    height: 15px;
+}
+#cmp{
+    color: orangered;
+    text-align: center;
+}
+#cmpt{
+    color: orangered;
+    text-align: center;
+    text-decoration: underline;
+}
+.comp-{
+    text-align: left;
+    width: 350px;
+    height: 200px;
+    line-height: 1.5;
+    margin-top: 100px;
+    margin-left: 300px;
+}
+.dspC{
+    display: flex;
+}
+#subr{
+    text-decoration: underline;
+}
+.comp--{
+    width: 350px;
+    height: 200px;
+    text-align: left;
+    line-height: 1.5;
+    margin-top: 100px;
+    margin-right: 150px;
+    margin-left: 300px;
+}
+#pexp{
+    width: 1000px;
+    height: 200px;
+    margin-left: 100px;
+    line-height: 1.5;
+}
+.encexp{
+    margin-left: 100px;
+}
+#mtopxp{
+    margin-top: 100px;
+}
+.estp{
+    margin-left: 35%;
+    margin-top: 100px;    
 }
