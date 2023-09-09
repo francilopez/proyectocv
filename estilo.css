@@ -1,16 +1,90 @@
 
-.boton{
-    width: 30%;
-    height: 60px;
-    margin: 20px;
-    background-color: rgba(68, 68, 71, 0.205);
-    text-align: center;
+:root{
+    --color: orangered;
 }
+
+
+
+.body{
+    font-family: 'Montserrat';
+    background-color: #010f1b ;
+    color: white;
+}
+
+
+.espacio{
+    height: 15px;
+}
+
+
+.colorvinc{
+    color: orangered;
+}
+
+
+
+/* botonera */
+
+
 .menu{
     background-color: rgba(0, 0, 0, 0.308);
     display: flex;
     width: 100%;
+    gap: 25px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 150px;
 }
+.btn{
+    position: relative;
+    padding: 20px 50px;
+    text-decoration: none;
+    letter-spacing: 10px;
+    transition: all 0.6s;
+    color: #fff;
+}
+.btn-2{
+    border: 3px solid;
+
+}
+.btn:hover{
+    background-color: #001a2b;
+    box-shadow: 0 0 20px var(--color);
+    border-color: var(--color);
+}
+.btn-2 span:nth-child(n){
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border: 3px solid;
+    transition: all 0.6s ease;
+}
+.btn-2 span:nth-child(1){
+    right: 10%;
+    top: -15%;
+    background-color: #fff;
+}
+.btn-2 span:nth-child(2){
+    left: 10%;
+    bottom: -10px;
+}
+.btn-2:hover span:nth-child(1){
+    right: 80%;
+    transform: rotate(90deg);
+    color: var(--color);
+    background-color:var(--color);
+}
+.btn-2:hover span:nth-child(2){
+    left: 80%;
+    transform: rotate(90deg);
+    color: var(--color);
+}
+
+
+
+/* foto*/
+
 .txtfoto{
     display: flex;
     text-align: right;
@@ -24,19 +98,25 @@
     margin-top: 100px;
     display: flex;
 }
+
+
+
+
+
+/* titulo cv */
 #encabezado{
     color: white;
     text-align: right;
     margin-right: 30px;
     text-decoration: underline;
 }
-.colortxtboton{
-    color: white;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 3.5;
-    text-decoration: none;
-}
+
+
+
+
+/* texto */
+
+
 .contenedortexto{
     color: white;
     text-align: left;
@@ -44,14 +124,8 @@
     margin-left: 50px;
     margin-top: 100px;
 }
-.body{
-    font-family: 'Montserrat';
-    background-color: #010f1b ;
-    color: white;
-}
-#parrafop{
-    text-align: right;
-}
+
+
 .contenedortextoi{
     color: white;
     text-align: left;
@@ -59,9 +133,7 @@
     margin-left: 50px;
     margin-top: 150px;
 }
-.colorvinc{
-    color: orangered;
-}
+
 .bienvenida{
     text-align: center;
     color: orangered;
@@ -70,16 +142,9 @@
     margin-right: 200px;
 }
 
-.menu1{
-    width: fit-content;
-    display: flex;
-    align-items: center;
-    border: 2px solid black;
-    padding: 12px 0;
-    margin: 20px;
-    background-color: #ddd;
-    justify-content: center;
-}
+/* competencias */
+
+
 .comp{
     text-align: left;
     width: 350px;
@@ -88,9 +153,7 @@
     margin-left: 150px;
     margin-top: 100px;
 }
-.espacio{
-    height: 15px;
-}
+
 #cmp{
     color: orangered;
     text-align: center;
@@ -123,6 +186,12 @@
     margin-right: 150px;
     margin-left: 300px;
 }
+
+
+
+
+/* experiencia*/
+
 #pexp{
     width: 1000px;
     height: 200px;
