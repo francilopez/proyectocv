@@ -85,11 +85,14 @@
 
 /* foto*/
 
+
+
 .txtfoto{
     display: flex;
     text-align: right;
 
 }
+
 .fotocv{
     height: 400px;
     width: 350px;
@@ -97,8 +100,12 @@
     margin-left: 40px;
     margin-top: 100px;
     display: flex;
+    border-radius: 10%;
+    box-shadow: 16px 14px 20px #00000b;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
 }
-
 
 
 
@@ -110,8 +117,8 @@
     margin-right: 30px;
     text-decoration: underline;
     margin-top: 20px;
+    text-shadow: 10px 10px 10px #00000b;
 }
-
 
 
 
@@ -207,5 +214,6 @@
 }
 .estp{
     margin-left: 35%;
-    margin-top: 100px;    
+    margin-top: 100px;
+    line-height: 1.5;    
 }
