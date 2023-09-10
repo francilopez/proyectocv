@@ -34,7 +34,10 @@
     justify-content: space-around;
     align-items: center;
     height: 150px;
+    overflow: hidden;
+    border-bottom: 3px solid orangered;
 }
+
 
 .btn{
     position: relative;
