@@ -9,6 +9,7 @@
     background-color: #010f1b;
     font-family: 'Montserrat';
     color: white;
+    box-sizing: border-box;
 }
 
 .espacio{
@@ -20,113 +21,140 @@
     color: #ff4500;
 }
 
-
-
-/* botonera */
-
-
-.menu{
-    background-color:#00000040;
-    display: flex;
-    width: 100%;
-    gap: 25px;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    height: 120px;
-    overflow: hidden;
-    border-bottom: 3px solid orangered;
-    top: 0;
-}
-
-
-.btn{
+main{
     position: relative;
-    padding: 10px 20px;
-    text-decoration: none;
-    letter-spacing: 5px;
-    transition: all 0,6s ease;
-    color: #fff;
 }
-.btn-2{
-    border: 3px solid;
 
+/* MENU */
+
+
+.inicio{
+    background-color:#030611;
+    color: #fff;
+    padding: 1.25rem 1.25rem 0.93rem 1.25rem;
+    border-bottom: 0.15rem solid orangered; 
+  }
+  
+  #nav-bar {
+    background-color:#030611;
+    width: 100%;
+    display: flex;
+    list-style: none;
+    position: relative;
+    padding: 1.25rem;
+    justify-content: center; 
+    overflow: hidden;
+  }
+  
+  .menu{
+    background-color:#030611;
+    display: flex;
+    align-items: center;
+  }
+
+
+.menu li {
+    background-color: #030611;
 }
-.btn:hover{
-    background-color: #001a2b;
+
+.menu li a { 
+text-decoration: none;
+color: #fff;
+position: relative;
+transition: all 0,6s ease;
+padding: 10px 20px;
+border: 0.15em solid;
+}
+
+.menu li a:hover{
     box-shadow: 0 0 20px var(--color);
     border-color: var(--color);
 }
-.btn:active{
+.menu li a:active{
     color: orangered;
 }
 
-
-/* foto*/
-
+@media (max-width: 767px){
 
 
-.txtfoto{
-    display: flex;
-    text-align: right;
+    .menu {
+        flex-direction: column;
+        align-items: left;
+      }
+    
+      .menu li {
+        padding: 1rem;
+      }
+    
+      .menu li a {
+        font-size: 1rem;
+      }
+}
+/* INDEX */
+
+.contenedorI{
+display: flex;
+justify-content: space-around;
+margin: 3rem;
 
 }
 
 .fotocv{
-    height: 400px;
-    width: 350px;
-    margin-left: 40px;
-    margin-top: 100px;
-    display: flex;
-    border-radius: 10%;
+    width: 16rem;
+    height: 40%;
+    border-radius: 5rem;
     box-shadow: 16px 14px 20px #00000b;
-    overflow: hidden;
-    align-items: center;
-    justify-content: center;
+    box-sizing: content-box;
 }
 
+.textoi{
+    margin: 2rem;
+    font-size: 1em;
+    box-sizing: content-box;
+    line-height: 1.5;
+}
 
+.bienvenida{
+    color: orangered;
+    text-align: center;
+    margin: 2em
+}
 
+@media (max-width: 767px){
+.contenedorI, .contenedorDP{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}  
+}
 
 /* titulo cv */
 #encabezado{
     color: white;
     text-align: right;
-    margin-right: 30px;
+    margin-right: 1.5rem;
     text-decoration: underline;
-    margin-top: 20px;
+    margin-top: 1.5rem;
     text-shadow: 10px 10px 10px #00000b;
 }
 
 
 
-/* texto */
+/* datos personales */
 
+.contenedorDP{
+        display: flex;
+        margin: 3rem;
 
-.contenedortexto{
-    color: white;
-    text-align: left;
-    line-height: 3;
-    margin-left: 50px;
-    margin-top: 100px;
 }
 
-
-.contenedortextoi{
-    color: white;
-    text-align: left;
+.textoDP{
+    margin: 3em;
+    font-size: 1em;
+    box-sizing: content-box;
     line-height: 1.5;
-    margin-left: 50px;
-    margin-top: 150px;
 }
 
-.bienvenida{
-    text-align: center;
-    color: orangered;
-    font-size: 20px;
-    margin-top: 100px;
-    margin-right: 200px;
-}
 
 /* competencias */
 
@@ -160,6 +188,7 @@
 }
 .dspC{
     display: flex;
+   margin-left: 2rem;
 }
 #subr{
     text-decoration: underline;
