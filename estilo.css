@@ -74,9 +74,9 @@ border: 0.15em solid;
     color: orangered;
 }
 
+
+/* MEDIAQUERI MENU*/
 @media (max-width: 767px){
-
-
     .menu {
         flex-direction: column;
         align-items: left;
@@ -90,6 +90,10 @@ border: 0.15em solid;
         font-size: 1rem;
       }
 }
+
+
+
+
 /* INDEX */
 
 .contenedorI{
@@ -120,13 +124,30 @@ margin: 3rem;
     margin: 2em
 }
 
+
+
+
+/* MEDIA QUERI */
 @media (max-width: 767px){
-.contenedorI, .contenedorDP{
+.contenedorI, .contenedorDP, .contenedorC, .contenedorE, .contenedorX{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}  
+ }
+#encabezado{
+    color: white;
+    text-decoration: underline;
+    margin-top: 1.5rem;
+    text-shadow: 10px 10px 10px #00000b;
+    text-align: center;
+    font-size: 0.9rem;
+} 
 }
+
+
+
+
+
 
 /* titulo cv */
 #encabezado{
@@ -140,11 +161,11 @@ margin: 3rem;
 
 
 
-/* datos personales */
+/* DATOS PERSONALES */
 
 .contenedorDP{
-        display: flex;
-        margin: 3rem;
+    display: flex;
+    margin: 3rem;
 
 }
 
@@ -156,16 +177,14 @@ margin: 3rem;
 }
 
 
-/* competencias */
+/*  COMPETENCIAS  */
 
 
 .comp{
-    text-align: left;
-    width: 350px;
-    height: 200px;
     line-height: 1.5;
-    margin-left: 150px;
-    margin-top: 100px;
+    width: 18rem;
+    display: flex;
+    margin: 5%;
 }
 
 #cmp{
@@ -178,50 +197,34 @@ margin: 3rem;
     text-align: center;
     text-decoration: underline;
 }
-.comp-{
-    text-align: left;
-    width: 350px;
-    height: 200px;
-    line-height: 1.5;
-    margin-top: 100px;
-    margin-left: 300px;
-}
-.dspC{
+
+.contenedorC{
     display: flex;
-   margin-left: 2rem;
+    justify-content: center;
 }
 #subr{
     text-decoration: underline;
 }
-.comp--{
-    width: 350px;
-    height: 200px;
-    text-align: left;
-    line-height: 1.5;
-    margin-top: 100px;
-    margin-right: 150px;
-    margin-left: 300px;
+
+
+
+
+/* EXPERIENCIA */
+
+
+.contenedorX{
+    display: flex;
+    justify-content: left;
+    width: 90%;
+    margin-left: 5.5%;
 }
 
 
+/* ESTUDIOS */
 
-
-/* experiencia*/
-
-#pexp{
-    width: 1000px;
-    height: 200px;
-    margin-left: 100px;
-    line-height: 1.5;
-}
-.encexp{
-    margin-left: 100px;
-}
-#mtopxp{
-    margin-top: 100px;
-}
-.estp{
-    margin-left: 35%;
-    margin-top: 100px;
-    line-height: 1.5;    
+.contenedorE{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin-left: 5.5%;
 }
