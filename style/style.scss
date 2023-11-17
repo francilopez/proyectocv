@@ -1,0 +1,317 @@
+$negro: #111111;
+$blanco: #FEFEFE;
+$grisOscuro: #222222;
+$grisClaro: #C8C8C8;
+
+.switch{
+    background: #343D5B;
+    border-radius: 1000px;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    outline: none;
+
+    &::after {
+        content: "";
+        display: block;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        background: #f1f1f1;
+        top: 0;
+        left: unset;
+        right: 0;
+        border-radius: 100px;
+        transition: .3s ease all ;
+        box-shadow:  0px 0px 2px 2px rgba(0,0,0,.2);
+    }
+    &.active{
+        background: orange;
+        color: black;
+        &::after{
+            right: unset;
+            left: 0;
+        }
+    }
+
+     span{
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        display: block;
+        background: none;
+        color: #fff;
+     }
+}
+
+:root{
+    --color: orangered;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+    box-sizing: border-box;
+}
+ 
+body{
+    background: #010f1b;
+    color: $blanco;
+    &.dark{
+        background: $blanco;
+        color: $negro;
+        
+    }
+
+}
+
+.espacio{
+    height: 15px;
+}
+
+
+.colorvinc{
+    color: #ff4500;
+}
+
+
+/* MENU */
+     
+.inicio{
+    background: #030611;
+    padding: 1.25rem 1.25rem 0.93rem 1.25rem;
+    border-bottom: 0.15rem solid orangered; 
+
+    body.dark &{
+        background: white;
+        color: black;
+    }
+  }
+  
+  #nav-bar {
+    background-color:#030611;
+    width: 100%;
+    display: flex;
+    list-style: none;
+    position: relative;
+    padding: 1.25rem;
+    justify-content: center; 
+    overflow: hidden;
+
+
+    body.dark &{
+        background: white;
+        color: black;
+    }
+  }
+  
+  .menu{
+    background-color:#030611;
+    display: flex;
+    align-items: center;
+
+    body.dark &{
+        background: white;
+        color: black;
+    }
+
+  }
+
+
+.menu li {
+    background-color: #030611;
+
+    body.dark &{
+        background: white;
+        color: black;
+    }
+}
+
+.menu li a { 
+text-decoration: none;
+position: relative;
+transition: all 0,6s ease;
+padding: 10px 20px;
+border: 0.15em solid;
+color: $blanco;
+
+body.dark &{
+    background: white;
+    color: black;
+}
+}
+
+.menu li a:hover{
+    box-shadow: 0 0 20px var(--color);
+    border-color: var(--color);
+}
+.menu li a:active{
+    color: orangered;
+}
+
+
+/* MEDIAQUERI MENU*/
+@media (max-width: 767px){
+    .menu {
+        flex-direction: column;
+        align-items: left;
+      }
+    
+      .menu li {
+        padding: 1rem;
+      }
+    
+      .menu li a {
+        font-size: 1rem;
+      }
+}
+
+
+
+
+/* INDEX */
+
+.contenedorI{
+display: flex;
+justify-content: space-around;
+margin: 3rem;
+
+}
+
+.fotocv{
+    width: 16rem;
+    height: 40%;
+    border-radius: 5rem;
+    box-shadow: 16px 14px 20px #00000b;
+    box-sizing: content-box;
+    
+    body.dark &{
+        box-shadow: 16px 14px 20px $grisClaro;
+    }
+}
+
+.textoi{
+    margin: 2rem;
+    font-size: 1em;
+    box-sizing: content-box;
+    line-height: 1.5;
+}
+
+.bienvenida{
+    color: orangered;
+    text-align: center;
+    margin: 2em
+}
+
+
+
+
+/* MEDIA QUERI */
+@media (max-width: 767px){
+.contenedorI, .contenedorDP, .contenedorC, .contenedorE, .contenedorX{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+#encabezado{
+    color: white;
+    text-decoration: underline;
+    margin-top: 1.5rem;
+    text-shadow: 10px 10px 10px #00000b;
+    text-align: center;
+    font-size: 0.9rem;
+} 
+}
+
+
+
+
+
+
+/* titulo cv */
+#encabezado{
+    color: white;
+    text-align: right;
+    margin-right: 1.5rem;
+    text-decoration: underline;
+    margin-top: 1.5rem;
+    text-shadow: 10px 10px 10px #00000b;
+
+    body.dark &{
+        color: 10px 10px 10px $grisClaro;
+        color: $negro;
+       
+    }
+}
+
+
+
+/* DATOS PERSONALES */
+
+.contenedorDP{
+    display: flex;
+    margin: 3rem;
+
+}
+
+.textoDP{
+    margin: 3em;
+    font-size: 1em;
+    box-sizing: content-box;
+    line-height: 1.5;
+}
+
+
+/*  COMPETENCIAS  */
+
+
+.comp{
+    line-height: 1.5;
+    width: 18rem;
+    display: flex;
+    margin: 5%;
+}
+
+#cmp{
+    color: orangered;
+    text-align: center;
+    text-shadow: #00000b 10px 10px 10px;
+}
+#cmpt{
+    color: orangered;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.contenedorC{
+    display: flex;
+    justify-content: center;
+}
+#subr{
+    text-decoration: underline;
+}
+
+
+
+
+/* EXPERIENCIA */
+
+
+.contenedorX{
+    display: flex;
+    justify-content: left;
+    width: 90%;
+    margin-left: 5.5%;
+}
+
+
+/* ESTUDIOS */
+
+.contenedorE{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin-left: 5.5%;
+}
